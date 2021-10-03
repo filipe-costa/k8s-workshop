@@ -1,0 +1,22 @@
+# Deployment
+---
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+  labels:
+    app: hello-world
+    
+# Service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+
+# Ingress 
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-world-ingress
